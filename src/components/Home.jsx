@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import bannerImage from "../assets/Images/bannerPerson.png";
-import account from "../assets/Icons/accounts1.png";
+
+import { useLoaderData } from "react-router-dom";
+import Category from "./Category";
+import Job from "./Job";
 
 const Home = () => {
+  const { jobs, categories } = useLoaderData();
+
+  const [allData, setAllData] = useState(false);
   return (
     <>
       {/* Banner Section */}
@@ -24,7 +30,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       {/* Job category section */}
       <section className="mt-32">
         <div className="my-container">
@@ -36,13 +41,36 @@ const Home = () => {
             </p>
           </div>
           {/* Category container */}
-          <div>
-            {/* Category */}
-            <div>
-              <img src={account} alt="" />
-              <h4>Account and Finance</h4>
-              <p>300 Jobs Available</p>
-            </div>
+          <div className="flex gap-4">
+            {categories.map((category) => (
+              <Category key={category.name} category={category}></Category>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Featured Jobs section */}
+      <section className="mt-32">
+        <div className="my-container">
+          <div className="text-center">
+            <h3 className="text-5xl font-bold">Featured Jobs</h3>
+            <p className="mt-4 mb-8">
+              Explore thousands of job opportunities with all the information you need. Its your
+              future.
+            </p>
+          </div>
+          {/* Jobs container */}
+          <div className="grid grid-cols-2 gap-6">
+            {allData
+              ? jobs.map((job) => <Job key={job.id} job={job}></Job>)
+              : jobs.slice(0, 4).map((job) => <Job key={job.id} job={job}></Job>)}
+          </div>
+          <div className="w-full flex justify-center mt-10 mb-32">
+            <button
+              className={`btn mx-auto ${allData ? "hidden" : "block"}`}
+              onClick={() => setAllData(true)}
+            >
+              Show All Jobs
+            </button>
           </div>
         </div>
       </section>
