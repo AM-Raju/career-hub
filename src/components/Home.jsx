@@ -13,25 +13,27 @@ const Home = () => {
     <>
       {/* Banner Section */}
       <section className="bg-gray-100">
-        <div className="my-container ">
-          <div className="flex">
+        <div className="my-container">
+          <div className="block md:flex md:flex-row-reverse">
+            <img className="w-[3850px] md:w-full" src={bannerImage} alt="" />
             <div className="my-auto">
-              <h2 className="text-6xl font-bold leading-snug">
+              <h2 className="text-5xl md:text-6xl font-bold leading-snug text-center md:text-left">
                 One Step <br /> Closer To Your <br />{" "}
                 <span className="text-gradient">Dream Job</span>
               </h2>
-              <p className="my-7">
+              <p className="my-7 text-center md:text-left px-5 md:px-0">
                 Explore thousands of job opportunities with all the information you need. Its your
                 future. Come find it. Manage all your job application from start to finish
               </p>
-              <button className="btn">Get Started</button>
+              <div className="flex justify-center md:justify-start">
+                <button className="btn">Get Started</button>
+              </div>
             </div>
-            <img src={bannerImage} alt="" />
           </div>
         </div>
       </section>
       {/* Job category section */}
-      <section className="mt-32">
+      <section className="mt-32 hidden">
         <div className="my-container">
           <div className="text-center">
             <h3 className="text-5xl font-bold">Job Category List</h3>
@@ -49,7 +51,7 @@ const Home = () => {
         </div>
       </section>
       {/* Featured Jobs section */}
-      <section className="mt-32">
+      <section className="mt-32 hidden">
         <div className="my-container">
           <div className="text-center">
             <h3 className="text-5xl font-bold">Featured Jobs</h3>

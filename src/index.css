@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .my-container {
-  @apply w-[1280px] mx-auto;
+  @apply md:w-[1280px] mx-auto;
 }
 
 .btn {

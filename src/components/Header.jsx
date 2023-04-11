@@ -8,7 +8,7 @@ const Header = () => {
         <h2 className="text-3xl font-bold">PH@Jobs</h2>
         <nav className="flex gap-8 font-semibold">
           <NavLink to="/">Home</NavLink>
-          <NavLink>Statistics</NavLink>
+          <NavLink to="/statistics">Statistics</NavLink>
           <NavLink to="/jobs">Applied Jobs</NavLink>
           <NavLink to="/blog">Blog</NavLink>
         </nav>
