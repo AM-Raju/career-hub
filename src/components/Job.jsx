@@ -1,6 +1,7 @@
 import React from "react";
 import locationIcon from "../assets/Icons/Frame-4.png";
 import salaryIcon from "../assets/Icons/Frame.png";
+import { Link } from "react-router-dom";
 
 const Job = ({ job }) => {
   const { id, logo, title, companyName, jobType, location, salary } = job;
@@ -16,7 +17,9 @@ const Job = ({ job }) => {
         <img className="ml-8 w-6 h-6" src={salaryIcon} alt="" />
         <h4 className="text-xl ml-2">Salary: ${salary} </h4>
       </div>
-      <button className="btn">View Details</button>
+      <Link to={`/details/${id}`}>
+        <button className="btn">View Details</button>
+      </Link>
     </div>
   );
 };
