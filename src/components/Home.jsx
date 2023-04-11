@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
       {/* Banner Section */}
-      <section className="bg-gray-100">
+      <section className="bg-gray-100 pt-52 relative -top-44 -z-10">
         <div className="my-container">
           <div className="block md:flex md:flex-row-reverse">
             <img className="w-[3850px] md:w-full" src={bannerImage} alt="" />

@@ -11,6 +11,7 @@ import {
   AreaChart,
   Area,
 } from "recharts";
+import Banner from "./Banner";
 
 const Statistics = () => {
   const data = [
@@ -48,15 +49,18 @@ const Statistics = () => {
     },
   ];
   return (
-    <div className="my-container mt-24">
-      <h3 className="text-3xl text-center mb-8 font-semibold">PH Assignment Marks</h3>
-      <AreaChart className="mx-auto" width={1000} height={500} data={data}>
-        <Area type="monotone" dataKey="mark" stroke="#8884d6" fill="#8884d8"></Area>
-        <XAxis dataKey="name" />
-        <YAxis></YAxis>
-        <Tooltip></Tooltip>
-      </AreaChart>
-    </div>
+    <>
+      <Banner></Banner>
+      <div className="my-container mt-24 relative -top-32">
+        <h3 className="text-3xl text-center mb-8 font-semibold">PH Assignment Marks</h3>
+        <AreaChart className="mx-auto" width={1000} height={500} data={data}>
+          <Area type="monotone" dataKey="mark" stroke="#8884d6" fill="#8884d8"></Area>
+          <XAxis dataKey="name" />
+          <YAxis></YAxis>
+          <Tooltip></Tooltip>
+        </AreaChart>
+      </div>
+    </>
   );
 };
 
