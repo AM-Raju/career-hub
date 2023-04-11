@@ -18,7 +18,7 @@ const AppliedJobs = () => {
 
   return (
     <>
-      <Banner></Banner>
+      <Banner>Applied Jobs</Banner>
       <div className="my-container relative -top-20">
         <div className="relative h-16">
           <button className="btn absolute right-32 top-0" onClick={filterRemoteJob}>

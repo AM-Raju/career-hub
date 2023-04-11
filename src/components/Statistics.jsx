@@ -50,7 +50,7 @@ const Statistics = () => {
   ];
   return (
     <>
-      <Banner></Banner>
+      <Banner>Statistics</Banner>
       <div className="my-container mt-24 relative -top-32">
         <h3 className="text-3xl text-center mb-8 font-semibold">PH Assignment Marks</h3>
         <AreaChart className="mx-auto" width={1000} height={500} data={data}>

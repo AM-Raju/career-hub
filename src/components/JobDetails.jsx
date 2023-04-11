@@ -3,6 +3,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import salaryIcon from "../assets/Icons/Frame.png";
 import jobTitleIcon from "../assets/Icons/Frame-1.png";
 import { addToDb } from "../utilities/fakeJobsDB";
+import Banner from "./Banner";
 
 const JobDetails = () => {
   const params = useParams();
@@ -19,7 +20,8 @@ const JobDetails = () => {
 
   return (
     <>
-      <section className="mt-32">
+      <Banner>Job Details</Banner>
+      <section className="mt-32 relative -top-40">
         <div className="my-container flex gap-14">
           <div className="w-[856px]">
             <p>
