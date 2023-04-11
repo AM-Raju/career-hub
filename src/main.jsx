@@ -8,6 +8,7 @@ import dataLoader from "./loader/loader";
 import JobDetails from "./components/JobDetails";
 import AppliedJobs from "./components/AppliedJobs";
 import ErrorPage from "./components/ErrorPage";
+import Blog from "./components/Blog";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
         path: "/jobs",
         element: <AppliedJobs></AppliedJobs>,
         loader: dataLoader,
+      },
+      {
+        path: "/blog",
+        element: <Blog></Blog>,
       },
     ],
   },

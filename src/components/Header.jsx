@@ -10,7 +10,7 @@ const Header = () => {
           <NavLink to="/">Home</NavLink>
           <NavLink>Statistics</NavLink>
           <NavLink to="/jobs">Applied Jobs</NavLink>
-          <NavLink>Blog</NavLink>
+          <NavLink to="/blog">Blog</NavLink>
         </nav>
         <button className="btn">Start Applying</button>
       </div>
