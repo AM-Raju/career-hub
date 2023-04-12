@@ -12,20 +12,20 @@ const Home = () => {
   return (
     <>
       {/* Banner Section */}
-      <section className="bg-gray-100 pt-52 relative -top-44 -z-10">
+      <section className="bg-gray-100 pt-96 md:pt-52 relative -top-96 md:-top-44 -z-10">
         <div className="my-container">
           <div className="block md:flex md:flex-row-reverse">
-            <img className="w-[3850px] md:w-full" src={bannerImage} alt="" />
+            <img className="w-[385px] md:w-full" src={bannerImage} alt="" />
             <div className="my-auto">
-              <h2 className="text-5xl md:text-6xl font-bold leading-snug text-center md:text-left">
-                One Step <br /> Closer To Your <br />{" "}
+              <h2 className="text-5xl md:text-6xl font-bold md:leading-snug text-center md:text-left">
+                One Step <br /> Closer To Your <br />
                 <span className="text-gradient">Dream Job</span>
               </h2>
               <p className="my-7 text-center md:text-left px-5 md:px-0">
                 Explore thousands of job opportunities with all the information you need. Its your
                 future. Come find it. Manage all your job application from start to finish
               </p>
-              <div className="flex justify-center md:justify-start">
+              <div className="flex justify-center md:justify-start pb-10 md:pb-0">
                 <button className="btn">Get Started</button>
               </div>
             </div>
@@ -33,17 +33,17 @@ const Home = () => {
         </div>
       </section>
       {/* Job category section */}
-      <section className="mt-32 hidden">
+      <section className="mt-32 relative -top-96 md:-top-44">
         <div className="my-container">
           <div className="text-center">
-            <h3 className="text-5xl font-bold">Job Category List</h3>
-            <p className="mt-4 mb-8">
+            <h3 className="text-4xl md:text-5xl font-bold">Job Category List</h3>
+            <p className="mt-4 mb-8 px-5 md:px-0">
               Explore thousands of job opportunities with all the information you need. Its your
               future.
             </p>
           </div>
           {/* Category container */}
-          <div className="flex gap-4">
+          <div className="grid md:grid-cols-4 gap-8 w-72 md:w-full mx-auto">
             {categories.map((category) => (
               <Category key={category.name} category={category}></Category>
             ))}
@@ -51,17 +51,17 @@ const Home = () => {
         </div>
       </section>
       {/* Featured Jobs section */}
-      <section className="mt-32 hidden">
+      <section className="mt-32 relative -top-96 md:-top-44">
         <div className="my-container">
           <div className="text-center">
             <h3 className="text-5xl font-bold">Featured Jobs</h3>
-            <p className="mt-4 mb-8">
+            <p className="mt-4 mb-8 px-5 md:px-0">
               Explore thousands of job opportunities with all the information you need. Its your
               future.
             </p>
           </div>
           {/* Jobs container */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 w-96 mx-auto md:w-full">
             {allData
               ? jobs.map((job) => <Job key={job.id} job={job}></Job>)
               : jobs.slice(0, 4).map((job) => <Job key={job.id} job={job}></Job>)}
