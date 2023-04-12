@@ -12,20 +12,20 @@ const Home = () => {
   return (
     <>
       {/* Banner Section */}
-      <section className="bg-gray-100 pt-96 md:pt-52 relative -top-96 md:-top-44 -z-10">
+      <section className="bg-gray-100 pt-96 md:pt-40 relative -top-96 md:-top-36 -z-10">
         <div className="my-container">
           <div className="block md:flex md:flex-row-reverse">
-            <img className="w-[385px] md:w-full" src={bannerImage} alt="" />
+            <img className=" w-[385px] md:w-[80%]" src={bannerImage} alt="" />
             <div className="my-auto">
-              <h2 className="text-5xl md:text-6xl font-bold md:leading-snug text-center md:text-left">
+              <h2 className="mt-10 md:mt-0 text-5xl md:text-6xl font-bold leading-snug md:leading-snug text-center md:text-left">
                 One Step <br /> Closer To Your <br />
                 <span className="text-gradient">Dream Job</span>
               </h2>
-              <p className="my-7 text-center md:text-left px-5 md:px-0">
+              <p className="my-10 md:my-7 text-center md:text-left px-5 md:px-0">
                 Explore thousands of job opportunities with all the information you need. Its your
                 future. Come find it. Manage all your job application from start to finish
               </p>
-              <div className="flex justify-center md:justify-start pb-10 md:pb-0">
+              <div className="flex justify-center md:justify-start pb-28 pt-10 md:p-0">
                 <button className="btn">Get Started</button>
               </div>
             </div>
@@ -33,11 +33,11 @@ const Home = () => {
         </div>
       </section>
       {/* Job category section */}
-      <section className="mt-32 relative -top-96 md:-top-44">
+      <section className="md:mt-32 relative -top-72 md:-top-32">
         <div className="my-container">
           <div className="text-center">
             <h3 className="text-4xl md:text-5xl font-bold">Job Category List</h3>
-            <p className="mt-4 mb-8 px-5 md:px-0">
+            <p className="mt-4 mb-16 px-5 md:px-0">
               Explore thousands of job opportunities with all the information you need. Its your
               future.
             </p>
@@ -51,11 +51,11 @@ const Home = () => {
         </div>
       </section>
       {/* Featured Jobs section */}
-      <section className="mt-32 relative -top-96 md:-top-44">
+      <section className="md:mt-32 relative -top-32 md:-top-28">
         <div className="my-container">
           <div className="text-center">
             <h3 className="text-5xl font-bold">Featured Jobs</h3>
-            <p className="mt-4 mb-8 px-5 md:px-0">
+            <p className="mt-4 mb-16 px-5 md:px-0">
               Explore thousands of job opportunities with all the information you need. Its your
               future.
             </p>
@@ -66,7 +66,7 @@ const Home = () => {
               ? jobs.map((job) => <Job key={job.id} job={job}></Job>)
               : jobs.slice(0, 4).map((job) => <Job key={job.id} job={job}></Job>)}
           </div>
-          <div className="w-full flex justify-center mt-10 mb-32">
+          <div className="w-full flex justify-center mt-16 md:mb-10">
             <button
               className={`btn mx-auto ${allData ? "hidden" : "block"}`}
               onClick={() => setAllData(true)}

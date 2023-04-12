@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Job = ({ job }) => {
   const { id, logo, title, companyName, jobType, location, salary } = job;
   return (
-    <div className="w-96 md:w-[628px] bg-purple-50 p-14 box-border rounded-md border-[1px] border-purple-100 hover:border-purple-300">
+    <div className="w-[350px] mx-auto md:w-[628px] bg-purple-50 p-14 box-border rounded-md border-[1px] border-purple-100 hover:border-purple-300">
       <img src={logo} alt="" />
       <h3 className="text-2xl font-semibold mt-8">{title}</h3>
       <h4 className="text-xl mt-2 mb-4">{companyName}</h4>
