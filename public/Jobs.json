@@ -11,8 +11,9 @@
     "jobDesc": "Documenting code and development processes: Document the code and development processes to ensure that other developers can understand how the application works and how it can be maintained and updated. They also create user documentation to help end-users understand how to use the application.",
     "jobResponsibility": "Building and maintaining front-end & back-end infrastructure: Candidate will be responsible for building and maintaining the front-end & back-end infrastructure of web applications. This includes developing server-side logic, databases, and APIs using PHP and JavaScript framework.",
     "education": "Bachelor of Science (BSc) in CSE",
-    "experience": "3+ years’ experience in back-end & front-end development, especially in Laravel and Vue.js",
-    "contact": "google@gmail.com"
+    "experience": "3+ years experience in back-end & front-end development, especially in Laravel and Vue.js",
+    "phone": "01720 00 00 00",
+    "email": "user@gmail.com"
   },
   {
     "id": "Phjob-2",
@@ -27,7 +28,8 @@
     "jobResponsibility": "Develop financial application writing efficient code using .net technologies. Writing testable program following proper architectural design Maintain proper documentations following standard guidelines Working on enhancement, bug fixing and change request on existing application.R&D on new tools, technologies and methodologies.",
     "education": "Minimum Bachelor in Computer Science / Engineering",
     "experience": "At least 3 years in required field",
-    "contact": "netflix@gmail.com"
+    "phone": "01720 00 00 00",
+    "email": "user@gmail.com"
   },
   {
     "id": "Phjob-3",
@@ -42,7 +44,8 @@
     "jobResponsibility": "Code canyon-Based Laravel Application Development. Ability to customize Laravel Script Web Application Development for Clients. Backend Development from Pre-made UI of Admin Panel Building Rest APIs Must have knowledge of working with ReactJS",
     "education": "Bachelor of Science (BSc) in CSE",
     "experience": "At least 2 year(s)",
-    "contact": "tesla@gmail.com"
+    "phone": "01720 00 00 00",
+    "email": "user@gmail.com"
   },
   {
     "id": "Phjob-4",
@@ -57,7 +60,8 @@
     "jobResponsibility": "Prepare high-quality and eye-catching graphic visuals and elements for our social platforms. Think creatively and develop new design concepts, graphics, and layouts with innovative and world-class content design skills.",
     "education": "Bachelor degree in any discipline",
     "experience": "2 to 4 year(s)",
-    "contact": "airbnb@gmail.com"
+    "phone": "01720 00 00 00",
+    "email": "user@gmail.com"
   },
   {
     "id": "Phjob-5",
@@ -72,7 +76,8 @@
     "jobResponsibility": "You`ll also ensure that applications are responsive, and work with graphic designers to design web features, among other things. Please do not apply if you don`t have direct PHP(Laravel) & React.js development experience.",
     "education": "Bachelor of Science (BSc) in CSE",
     "experience": "At least 2 year(s)",
-    "contact": "instagram@gmail.com"
+    "phone": "01720 00 00 00",
+    "email": "user@gmail.com"
   },
   {
     "id": "Phjob-6",
@@ -87,6 +92,7 @@
     "jobResponsibility": "Collaborate with back-end developers to ensure seamless integration of front-end and back-end components. Ensure optimal performance and scalability of applications",
     "education": "Minimum Bachelor degree in Computer Sciencet",
     "experience": "At least 2 year(s)",
-    "contact": "apple@gmail.com"
+    "phone": "01720 00 00 00",
+    "email": "user@gmail.com"
   }
 ]

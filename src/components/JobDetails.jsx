@@ -64,8 +64,16 @@ const JobDetails = () => {
               <h3 className=" text-xl font-semibold mt-4">Contact Information</h3>
               <div className="h-[2px] w-full bg-purple-400 my-4"></div>
               <p>
+                <span className="font-semibold">Phone: </span>
+                {jobData.phone}
+              </p>
+              <p>
                 <span className="font-semibold">Email: </span>
-                {jobData.contact}
+                {jobData.email}
+              </p>
+              <p>
+                <span className="font-semibold">Address: </span>
+                {jobData.location}
               </p>
             </div>
             <button onClick={() => addToDb(jobData.id)} className="btn w-full mt-4">

@@ -5,15 +5,15 @@ import Banner from "./Banner";
 
 const AppliedJobs = () => {
   const { savedJobs } = useLoaderData();
-  const [workingPlace, setWorkingPlace] = useState(savedJobs);
+  const [filteredJobs, setFilteredJobs] = useState([]);
 
   const filterOnsiteJob = () => {
-    const onsiteJob = workingPlace.filter((job) => job.jobType === "Onsite");
-    setWorkingPlace(onsiteJob);
+    const onsiteJob = savedJobs.filter((job) => job.jobType === "Onsite");
+    setFilteredJobs(onsiteJob);
   };
   const filterRemoteJob = () => {
-    const remoteJob = workingPlace.filter((job) => job.jobType === "Remote");
-    setWorkingPlace(remoteJob);
+    const remoteJob = savedJobs.filter((job) => job.jobType === "Remote");
+    setFilteredJobs(remoteJob);
   };
 
   return (
@@ -29,9 +29,20 @@ const AppliedJobs = () => {
           </button>
         </div>
         <div>
-          {workingPlace.map((job) => (
-            <AppliedJob key={job.id} job={job}></AppliedJob>
-          ))}
+          {filteredJobs.length > 0 && (
+            <div>
+              {filteredJobs.map((job) => (
+                <AppliedJob key={job.id} job={job}></AppliedJob>
+              ))}
+            </div>
+          )}
+          {filteredJobs.length < 1 && (
+            <div>
+              {savedJobs.map((job) => (
+                <AppliedJob key={job.id} job={job}></AppliedJob>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </>

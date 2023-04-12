@@ -9,3 +9,7 @@
 - If you click on that button your applied job will be showed on Apply Jobs page.
 - In Applied Jobs page you can sort jobs based on remote or onsite.
 - Here you will also see the View Details button which will redirect you into Job Details page.
+- On Statistics page there is a area chart based on PH Hero assignment marks.
+- On Blog page you will see four questions with answers.
+
+# Live Site Link:
